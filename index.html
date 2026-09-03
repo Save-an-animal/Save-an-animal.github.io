@@ -11,14 +11,22 @@
   body {
     background-color: black;
   }
+  
+  audio {
+    width: 350px;
+    display: block;
+    margin: 0 auto;
+  }
   </style>
   
   <h1 style="color: white; text-align: center">
     Hello!
   </h1>
+  
   <h2 style="color: white; text-align: center">
     How are you?
   </h2>
+  
   <script>
   function showEmoji (button) {
     button.textContent = "<3"
@@ -28,49 +36,73 @@
   }
 </script>
   
-   <button onclick= "showEmoji(this)" style="background-color: pink; border: none; display: block; margin: 0 auto; font-size: 20px">
-    Click to say good </button>
+   <button id="heartbtn" onclick="showEmoji(this)" style="background-color: pink; border: none; display: block; margin: 0 auto; font-size: 20px">
+    Click to say good</button>
 
   <h2 style="color: white; text-align: center">
     I love
   </h2>
+  
   <h2 style="color: white; text-align: center"> 
     Fopses and wolps
     </h2>
+  
   <h2 style="color: white; text-align: center">
     That's why im giving you<br>a cute way to help
   </h2>
+  
   <h2 style="color: white; text-align: center">
     Click the images to save an animal!
   </h2>
+  
   <hr style="width: 95%;">
   <br>
+  
   <h1 style="color: white; text-align:center">
     Save fops
   </h1>
+  
   <a style="color: white;" href="https://www.saveafox.org/">
   <img src="fox.jpg" height="280" style="display: block; margin: auto;" alt="A picture of a fox">
   </a>
   
   <br>
+  
   <h1 style="color: white; text-align:center">
-    save wolps too!
+    save wolps
   </h1>
   
   <a style="color: white;" href="https://nywolf.org/save-the-wolves/">
   <img src="wolf.jpg" height="280" style="display: block; margin: auto;" alt="A picture of a wolf">
   </a>
   
+  <h1 style="color: white; text-align:center">
+    save cheepas
+  </h1>
+  
+  <a style="color: white;" href="https://cheetah.org/">
+  <img src="cheetah.jpg" height="280" width="300" style="display: block; margin: auto;" alt="A picture of a cheetah">
+  </a>
+  
   <h1 style="color: white; text-align: center;">
     THANKS A TON!
   </h1>
+  
   <hr style="width: 95% ;">
   <br>
+  
   <h4 style="color: white; text-align: center;">
     I will try my best to add more animals.<br>Please send an email to bring an animal to my attentin
   </h4>
+  
   <p style="text-align: center;">
   <a style="color: white; text-align: center;" href="mailto:haythamzoubi960@gmail.com">Click here to send me an email!
     </a>
+    
+    <hr>
+    <audio controls autoplay loop>
+    <source src="default.mp3">
+  </audio>
+    
 </body>
 </html>
