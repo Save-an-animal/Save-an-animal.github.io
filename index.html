@@ -165,8 +165,19 @@
   <hr>
 
   <div class="center-box">
-  <h1 style=" background-color: pink; color: black; display: inline-block; padding: 5px; border-radius: 6px;">THANKS A TON!</h1>
+  <button id="thanksbtn" onclick="thanksClick(this)" style="background-color: pink; color: black; border: none; border-radius: 6px; font-size: 32px; font-weight: bold; padding: 5px 12px; cursor: pointer; transition: transform 0.2s ease-in-out;">THANKS A TON!</button>
   </div>
+
+  <script>
+  function thanksClick (button) {
+    button.style.transform = "scale(0.9)";
+    button.textContent = "<3";
+    setTimeout (() => {
+      button.style.transform = "scale(1)";
+      window.location.href = "cat.html";
+    }, 700 );
+  }
+  </script>
 
   <h4>I will try my best to add more animals.<br>Please send an email to bring an animal to my attention.</h4>
 
