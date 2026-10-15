@@ -170,11 +170,13 @@
 
   <script>
   function thanksClick (button) {
+    const originalText = button.textContent;
     button.style.transform = "scale(0.9)";
     button.textContent = "<3";
     setTimeout (() => {
+      button.textContent = originalText;
       window.location.href = "animal.html";
-    }, 500 );
+    }, 1000 );
   }
   </script>
 
