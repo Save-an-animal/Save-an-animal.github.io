@@ -164,7 +164,17 @@
   <br>
   <hr>
 
-  <h2 style="color: pink; font-size: 32px;">THANKS A TON!</h2>
+  <div id="thanksbox" style="text-align: center;">
+    <h2 id="thankshead" onclick="showAiMsg()" style="color: pink; font-size: 32px; cursor: pointer;">THANKS A TON!</h2>
+  </div>
+
+  <script>
+  function showAiMsg () {
+    document.getElementById("thanksbox").innerHTML =
+      '<p style="color: pink;">this feature is coded by ai and youre in the non ai version :3</p>' +
+      '<a href="../animal.html" style="color: pink; text-decoration: underline;">Would you like to switch to an AI version</a>';
+  }
+  </script>
 
   <h4>I will try my best to add more animals.<br>Please send an email to bring an animal to my attention.</h4>
 
