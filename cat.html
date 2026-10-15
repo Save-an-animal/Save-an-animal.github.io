@@ -61,6 +61,25 @@
     transform: translateY(6px) scale(.8);
     transition: opacity .4s ease, transform .3s ease;
   }
+  .intro {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin: 0;
+    white-space: nowrap;
+    color: var(--ink);
+    font-family: "Comic Sans MS", "Chalkboard SE", "Marker Felt", "Segoe Print", cursive;
+    font-size: 1.1rem;
+    pointer-events: none;
+    opacity: 0;
+    animation: intro 1.5s ease-in-out forwards;
+  }
+  @keyframes intro {
+    0% { opacity: 0; transform: translate(-50%, 6px); }
+    15% { opacity: 1; transform: translate(-50%, 0); }
+    80% { opacity: 1; transform: translate(-50%, -3px); }
+    100% { opacity: 0; transform: translate(-50%, -6px); }
+  }
   .bubble.show {
     opacity: 1;
     transform: translateY(0) scale(1);
@@ -70,6 +89,7 @@
 </head>
 <body>
 <div class="wrap">
+<h3 class="intro">This is claude coded while the main index.html site is human coded</h3>
 <svg id="cat" viewBox="-20 -10 350 340" role="img" aria-label="A cute cat">
   <ellipse cx="150" cy="300" rx="85" ry="12" fill="#d9c9e8" opacity=".6"/>
   <path class="tail" d="M240 270 Q300 250 280 190" fill="none" stroke="var(--fur)" stroke-width="24" stroke-linecap="round"/>
