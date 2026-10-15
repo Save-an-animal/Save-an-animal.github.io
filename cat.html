@@ -62,17 +62,17 @@
     transition: opacity .4s ease, transform .3s ease;
   }
   .intro {
-    position: absolute;
-    top: -10px;
+    position: fixed;
+    top: 25%;
     left: 50%;
     margin: 0;
     white-space: nowrap;
     color: var(--ink);
-    font-family: "Comic Sans MS", "Chalkboard SE", "Marker Felt", "Segoe Print", cursive;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     font-size: 1.1rem;
     pointer-events: none;
     opacity: 0;
-    animation: intro 1.5s ease-in-out forwards;
+    animation: intro 2.5s ease-in-out forwards;
   }
   @keyframes intro {
     0% { opacity: 0; transform: translate(-50%, 6px); }
