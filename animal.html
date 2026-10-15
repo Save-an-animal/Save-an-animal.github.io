@@ -98,17 +98,19 @@
     visibility: visible; opacity: 1;
   }
   .choice-box {
+    box-sizing: border-box; width: min(90vw, 440px); max-width: 100%;
     background: #fff; border-radius: 18px; padding: 24px; text-align: center;
-    color: var(--ink); font-family: sans-serif; box-shadow: 0 6px 20px rgba(0,0,0,.12);
+    color: var(--ink); font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 18px; line-height: 1.4; box-shadow: 0 6px 20px rgba(0,0,0,.12);
   }
-  .choice-box button {
-    margin: 8px; padding: 10px 18px; border: none; border-radius: 10px;
-    background: var(--ear); color: var(--ink); font-size: 18px; cursor: pointer;
+  .choice-box p { margin: 0 0 12px; }
+  .choice-box button, .choice-box a {
+    box-sizing: border-box; display: inline-block; margin: 8px; padding: 10px 18px;
+    border: none; border-radius: 10px; font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 18px; line-height: 1.2; text-decoration: none; cursor: pointer;
   }
-  .choice-box a {
-    display: inline-block; margin: 8px; padding: 10px 18px; border-radius: 10px;
-    background: var(--stripe); color: var(--ink); font-size: 18px; text-decoration: none;
-  }
+  .choice-box button { background: var(--ear); color: var(--ink); }
+  .choice-box a { background: var(--stripe); color: var(--ink); }
 </style>
 </head>
 <body>
