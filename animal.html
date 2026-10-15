@@ -69,10 +69,13 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    white-space: nowrap;
+    padding: 0 16px;
+    box-sizing: border-box;
+    white-space: normal;
     color: var(--ink);
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    font-size: 3.5vw;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: clamp(16px, 4.5vw, 28px);
+    line-height: 1.3;
     pointer-events: none;
     opacity: 0;
     animation: intro 3.5s ease-in-out forwards;
