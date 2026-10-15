@@ -40,6 +40,14 @@
     text-align: center;
   }
 
+  .thanks-header {
+    background-color: pink;
+    color: black;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 6px;
+  }
+
   img {
     display: block;
     margin: 0 auto;
@@ -164,17 +172,9 @@
   <br>
   <hr>
 
-  <div id="thanksbox" style="text-align: center;">
-    <h2 id="thankshead" onclick="showAiMsg()" style="color: pink; font-size: 32px; cursor: pointer;">THANKS A TON!</h2>
+  <div class="center-box">
+    <h1 class="thanks-header">THANKS A TON!</h1>
   </div>
-
-  <script>
-  function showAiMsg () {
-    document.getElementById("thanksbox").innerHTML =
-      '<p style="color: pink;">this feature is coded by ai and youre in the non ai version</p>' +
-      '<a href="../animal.html" style="color: pink; text-decoration: underline;">Would you like to switch to an AI version</a>';
-  }
-  </script>
 
   <h4>I will try my best to add more animals.<br>Please send an email to bring an animal to my attention.</h4>
 
